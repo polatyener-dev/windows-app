@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/widget"
 )
@@ -10,6 +11,7 @@ func main()  {
 
 	w := a.NewWindow("Windows Form Title")
 
+	w.Resize(fyne.NewSize(400,400))
 	w.SetContent(widget.NewLabel("Form Oluşturuldu!"))
 
 	w.ShowAndRun()
