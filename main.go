@@ -10,9 +10,10 @@ func main()  {
 	a := app.New()
 
 	w := a.NewWindow("Windows Form Title")
+	lbl := widget.NewLabel("Label Text!")
 
 	w.Resize(fyne.NewSize(400,400))
-	w.SetContent(widget.NewLabel("Form Oluşturuldu!"))
+	w.SetContent(lbl)
 
 	w.ShowAndRun()
 }
