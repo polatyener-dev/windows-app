@@ -12,4 +12,10 @@ https://jmeubank.github.io/tdm-gcc/download/
 ```
 https://www.cygwin.com/
 ```
+Program çalıştığında cmd ekranı da form ile birlikte açılır. 
+cmd açmadan build etmek için aşağıdaki komut satırını kullanabilirsiniz.
+
+```
+go build -ldflags="-H windowsgui"
+```
 
